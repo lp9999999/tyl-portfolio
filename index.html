@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="汤翊聆 · 跨境视觉设计主管个人作品集" />
+  <title>汤翊聆 · 跨境视觉设计主管</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@400;500;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.19/dist/lenis.min.js" defer></script>
+
+  <link rel="stylesheet" href="css/variables.css?v=20261024" />
+  <link rel="stylesheet" href="css/base.css?v=20261024" />
+  <link rel="stylesheet" href="css/sections.css?v=20261024b" />
+  <link rel="stylesheet" href="css/components.css?v=20261024b" />
+  <link rel="stylesheet" href="css/responsive.css?v=20261024b" />
+
+  <!-- 51.la 访问统计（同步安装，需置于 </head> 前） -->
+  <script charset="UTF-8" id="LA_COLLECT" src="https://sdk.51.la/js-sdk-pro.min.js"></script>
+  <script>LA.init({id:"3RbhvI0VSiryTud1",ck:"3RbhvI0VSiryTud1"})</script>
+</head>
+<body>
+
+  <!-- 顶部滚动进度 -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- 顶部品牌 -->
+  <header class="topbar" id="topbar">
+    <a href="#top" class="topbar-brand"><span class="dot"></span>TANG YILING</a>
+  </header>
+
+  <!-- 左侧目录 -->
+  <nav class="sidenav" id="sidenav" aria-label="目录">
+    <a href="#top"><i>01</i><span>封面</span></a>
+    <a href="#about"><i>02</i><span>关于</span></a>
+    <a href="#positioning"><i>03</i><span>定位</span></a>
+    <a href="#stats"><i>04</i><span>战绩</span></a>
+    <a href="#experience"><i>05</i><span>经历</span></a>
+    <a href="#projects"><i>06</i><span>项目</span></a>
+    <a href="#render3d"><i>07</i><span>3D</span></a>
+    <a href="#skills"><i>08</i><span>技能</span></a>
+    <a href="#works"><i>09</i><span>案例</span></a>
+    <a href="#contact"><i>10</i><span>联系</span></a>
+  </nav>
+
+  <!-- 移动端抽屉目录（≤1280 显示悬浮按钮，不影响内容页布局） -->
+  <button class="nav-fab" id="nav-fab" type="button" aria-label="打开目录" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-drawer-mask" id="nav-drawer-mask" aria-hidden="true"></div>
+  <nav class="nav-drawer" id="nav-drawer" aria-label="移动端目录">
+    <p class="nd-title">目录 · INDEX</p>
+    <a href="#top"><i>01</i><span>封面</span></a>
+    <a href="#about"><i>02</i><span>关于</span></a>
+    <a href="#positioning"><i>03</i><span>定位</span></a>
+    <a href="#stats"><i>04</i><span>战绩</span></a>
+    <a href="#experience"><i>05</i><span>经历</span></a>
+    <a href="#projects"><i>06</i><span>项目</span></a>
+    <a href="#render3d"><i>07</i><span>3D</span></a>
+    <a href="#skills"><i>08</i><span>技能</span></a>
+    <a href="#works"><i>09</i><span>案例</span></a>
+    <a href="#contact"><i>10</i><span>联系</span></a>
+  </nav>
+
+  <!-- ============ 01 · 设计封面屏（sticky，下一页覆盖） ============ -->
+  <section id="top" class="cover-screen">
+    <div class="cover-blob cover-blob--pink" aria-hidden="true"></div>
+    <div class="cover-blob cover-blob--cyan" aria-hidden="true"></div>
+
+    <div class="cover">
+      <!-- 左右主体（无顶部标签栏） -->
+      <div class="cover-main">
+        <div class="cover-text">
+          <h1 class="cover-title cv-anim cv-y">PORTFOLIO</h1>
+          <p class="cover-sub-en cv-anim cv-y">Visual Design · Full Case · Motion</p>
+          <span class="cover-line cv-anim" aria-hidden="true"></span>
+          <h2 class="cover-title-zh cv-anim cv-y">视觉全案设计作品集</h2>
+          <p class="cover-name-en cv-anim cv-y">Tang Yiling · Cross-border Visual Design Director</p>
+        </div>
+
+        <div class="cover-art cv-anim cv-y">
+          <svg class="cover-orbit" viewBox="0 0 600 500" preserveAspectRatio="none" aria-hidden="true">
+            <defs>
+              <linearGradient id="og1" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff2e63"/><stop offset="1" stop-color="#08d9d6"/>
+              </linearGradient>
+            </defs>
+            <path class="orbit-pink" d="M70 380 C 180 240, 360 250, 540 120" stroke="url(#og1)"/>
+            <path class="orbit-cyan" d="M40 150 C 220 230, 380 300, 560 360" stroke="url(#og1)"/>
+            <!-- 轨迹箭头 -->
+            <polygon points="536,112 548,118 534,128" fill="#08d9d6"/>
+            <polygon points="46,142 34,148 48,158" fill="#ff2e63"/>
+            <polygon points="300,250 312,244 312,258" fill="#08d9d6"/>
+          </svg>
+          <div class="cover-cards">
+            <figure class="cc-card cc-card--l"><img src="assets/img/cv-design.jpg" alt="视觉设计" /><i></i></figure>
+            <figure class="cc-card cc-card--c"><img src="assets/img/cv-photo.jpg" alt="产品拍摄" /><i></i></figure>
+            <figure class="cc-card cc-card--r"><img src="assets/img/cv-3d.jpg" alt="3D 渲染" /><i></i></figure>
+          </div>
+        </div>
+      </div>
+
+      <!-- 底部栏（仅保留左下能力文案） -->
+      <div class="cover-bottom">
+        <span class="cb-txt cv-anim cv-y">拍摄 · 精修 · 动效 · 3D · 管理 · 全链路交付</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 02 · 关于我 ============ -->
+  <section id="about" class="module">
+    <div class="title-screen">
+      <span class="title-num">02</span>
+      <p class="kicker">About Me</p>
+      <h2 class="title tri" data-line>关于我</h2>
+    </div>
+    <div class="panel content-panel">
+      <div class="about">
+        <p class="about-statement" data-line>
+          深耕亚马逊跨境视觉领域 <span class="text-red">4 年</span>，<br/>
+          兼具体系化管理能力与全链路落地能力的<span class="serif">实战型设计管理者</span>。
+        </p>
+        <div class="about-cols">
+          <p data-reveal>3 年主管经验，擅长从 0 到 1 搭建设计管理体系，驱动团队从经验化创作向标准化、规模化交付转型。</p>
+          <p data-reveal>熟悉 Amazon 平台视觉规范与合规红线，全链路覆盖拍摄、精修、A+ 页面、3D 协同、视频动效与上架落地。</p>
+        </div>
+        <div class="about-meta" data-reveal>
+          <span><i>姓名</i>汤翊聆</span>
+          <span><i>年龄</i>25 岁</span>
+          <span><i>籍贯</i>江苏 · 连云港</span>
+          <span><i>电话</i><a href="tel:18036388334">180&nbsp;3638&nbsp;8334</a></span>
+          <span><i>邮箱</i><a href="mailto:tmsx123456@163.com">tmsx123456@163.com</a></span>
+          <span><a class="feishu-link" href="https://my.feishu.cn/wiki/GykTw9DSAicyUwkWdAecgP1knKb" target="_blank" rel="noopener">视觉全案档案（点击可跳转飞书文档） →</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 03 · 核心定位 ============ -->
+  <section id="positioning" class="module">
+    <div class="title-screen">
+      <span class="title-num">03</span>
+      <p class="kicker">Positioning</p>
+      <h2 class="title tri" data-line>以体系提效，以视觉增值</h2>
+    </div>
+    <div class="panel content-panel">
+      <div class="pos-grid">
+        <article class="pos-item" data-tilt data-reveal>
+          <span class="pos-no">01</span>
+          <div class="pos-card">
+            <h3>体系搭建与团队管理</h3>
+            <p>标准化交付 SOP、全链路品控规范、项目排期机制及新人培养体系，推动团队从经验驱动向标准驱动升级。</p>
+          </div>
+        </article>
+        <article class="pos-item" data-tilt data-reveal>
+          <span class="pos-no">02</span>
+          <div class="pos-card">
+            <h3>全链路跨域统筹</h3>
+            <p>统筹 2D · 视频 · 3D 多模块协同，双平台多店铺全品类 SKU 视觉规范输出与合规管控。</p>
+          </div>
+        </article>
+        <article class="pos-item" data-tilt data-reveal>
+          <span class="pos-no">03</span>
+          <div class="pos-card">
+            <h3>项目拆解与落地交付</h3>
+            <p>结构化拆解复杂项目，模块化拆分、流程化梳理，精准匹配业务节点，保障高质量按期交付。</p>
+          </div>
+        </article>
+        <article class="pos-item" data-tilt data-reveal>
+          <span class="pos-no">04</span>
+          <div class="pos-card">
+            <h3>提效优化与能力赋能</h3>
+            <p>专业工具 + 自动化提效 + 数据复盘 + SOP 迭代，持续提升团队履约效率与产出天花板。</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 04 · 商业价值与业绩总览 ============ -->
+  <section id="stats" class="module">
+    <div class="title-screen">
+      <span class="title-num">04</span>
+      <p class="kicker">Business Impact</p>
+      <h2 class="title tri" data-line>商业价值与业绩总览</h2>
+    </div>
+    <div class="panel content-panel stats-panel">
+      <div class="stat-cards">
+        <!-- 上排：窄卡 4 个 -->
+        <div class="sc-row sc-row--narrow">
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="1">0</span><i>亿+次</i></span>
+            <span class="s-lab">累计总曝光</span>
+          </div>
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="6">0</span><b class="s-dash">–</b><span class="cu" data-to="10">0</span><i>人</i></span>
+            <span class="s-lab">跨职能设计团队</span>
+          </div>
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="280">0</span><i>+个</i></span>
+            <span class="s-lab">年均上新 SKU</span>
+          </div>
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="0.8" data-dec="1">0.0</span><i>%+</i></span>
+            <span class="s-lab">综合点击率</span>
+          </div>
+        </div>
+        <!-- 下排：宽卡 4 个 -->
+        <div class="sc-row sc-row--wide">
+          <div class="s-card" data-reveal>
+            <span class="s-val">亿级</span>
+            <span class="s-lab">制造工厂背景</span>
+          </div>
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="16">0</span><i>% 核心店铺</i></span>
+            <span class="s-lab">转化率</span>
+          </div>
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="1200">0</span><i>+张</i></span>
+            <span class="s-lab">团队月均产出</span>
+          </div>
+          <div class="s-card" data-reveal>
+            <span class="s-val"><span class="cu" data-to="35">0</span><i>% → </i><span class="cu" data-to="15">0</span><i>%</i></span>
+            <span class="s-lab">设计返工率降幅</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 05 · 工作经历 ============ -->
+  <section id="experience" class="module">
+    <div class="title-screen">
+      <span class="title-num">05</span>
+      <p class="kicker">Experience</p>
+      <h2 class="title tri" data-line>工作经历</h2>
+    </div>
+    <div class="panel content-panel">
+      <div class="exp">
+        <aside class="exp-aside">
+          <p class="exp-date serif">2023.01<span> — 至今</span></p>
+          <h3 class="exp-role">亚马逊视觉<br/>设计主管</h3>
+          <p class="exp-note">4 年跨境视觉经验 · 3 年主管经验<br/>从 0 到 1 搭建设计体系</p>
+        </aside>
+        <div class="exp-main">
+          <article class="exp-row" data-reveal>
+            <span class="exp-num serif">01</span>
+            <div>
+              <h4>团队体系搭建</h4>
+              <p>从零搭建标准化交付 SOP、全链路品控规范、项目排期机制及新人培养体系；月度设计复盘与培训机制，根据业务周期动态优化团队编制。</p>
+            </div>
+          </article>
+          <article class="exp-row" data-reveal>
+            <span class="exp-num serif">02</span>
+            <div>
+              <h4>视觉全案管理</h4>
+              <p>主导全店铺视觉体系迭代，数据导向优化主图构图、卖点层级与详情页场景化表达；常态化对接运营、采购、供应链，严格把控平台合规标准。</p>
+            </div>
+          </article>
+          <article class="exp-row" data-reveal>
+            <span class="exp-num serif">03</span>
+            <div>
+              <h4>全链路内容交付</h4>
+              <p>覆盖精修、A+ 页面、品牌故事、说明书、图册、展会物料、安装视频全场景输出；融合 3D 渲染、实拍混剪、AE 动态包装，搭建 3D 动态内容产出标准。</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 06 · 四大核心项目 ============ -->
+  <section id="projects" class="module">
+    <div class="title-screen">
+      <span class="title-num">06</span>
+      <p class="kicker">Selected Projects</p>
+      <h2 class="title tri" data-line>四大核心项目</h2>
+    </div>
+    <div class="panel content-panel projects-panel">
+
+      <!-- 项目 01 -->
+      <article class="project">
+        <header class="project-head">
+          <span class="project-index">Project 01</span>
+          <h3 class="project-title" data-line>设计团队流程优化与规范搭建</h3>
+          <span class="project-tag">团队管理 · SOP 体系</span>
+        </header>
+        <div class="stat-strip">
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="4">0</span> 周</span><span class="chip-lab">项目周期</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="100">0</span>%</span><span class="chip-lab">新人上手效率</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="25">0</span>%</span><span class="chip-lab">交付周期缩短</span></div>
+        </div>
+        <div class="project-body">
+          <div class="pb-block">
+            <h4>项目背景</h4>
+            <p>团队初期以新人为主，视觉标准不统一、新人上手周期长、返工率高、排期混乱，直接制约多店铺并行交付效率。</p>
+          </div>
+          <div class="pb-block">
+            <h4>核心动作</h4>
+            <ul>
+              <li>全链路诊断，拆解排期、审核、标准、沟通四大核心问题</li>
+              <li>「排期机制 + 分级审核 + 视觉规范手册 + 绩效考核」四位一体</li>
+              <li>建立新人阶梯式培养体系与月度复盘迭代机制</li>
+            </ul>
+          </div>
+          <div class="pb-block">
+            <h4>量化成果</h4>
+            <ul>
+              <li>新人独立上岗效率提升 <b>100%</b></li>
+              <li>团队交付周期缩短 <b>25%</b>，排期冲突率下降 <b>60%</b></li>
+              <li>设计返工率从 <b>35%</b> 降至 <b>15%</b></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 02 -->
+      <article class="project">
+        <header class="project-head">
+          <span class="project-index">Project 02</span>
+          <h3 class="project-title" data-line>Amazon 新品视觉全案</h3>
+          <span class="project-tag">亚马逊 · 全链路交付</span>
+        </header>
+        <div class="stat-strip">
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="7">0</span> 天</span><span class="chip-lab">单品全案交付</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="280">0</span>+</span><span class="chip-lab">年均 SKU 上新</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="0">0</span></span><span class="chip-lab">视觉合规事故</span></div>
+        </div>
+        <div class="project-body">
+          <div class="pb-block">
+            <h4>项目背景</h4>
+            <p>针对亚马逊新品 0→1 上线需求，从零搭建完整视觉体系，沉淀标准化工作流程支撑规模化上新，严格对齐平台合规红线。</p>
+          </div>
+          <div class="pb-block">
+            <h4>核心动作</h4>
+            <ul>
+              <li>全链路负责拍摄策划、布光控场、精修排版、A+ 页面、说明书物料交付</li>
+              <li>对接运营锚定核心卖点，转化导向优化视觉逻辑与信息层级</li>
+              <li>沉淀拍摄规范、精修标准、模板体系，形成可复用新品交付 SOP</li>
+            </ul>
+          </div>
+
+          <div class="compare-block">
+            <h4 class="block-title">成果展示 · 精修前后对比 <small>拖动滑块查看</small></h4>
+            <div class="compare-grid">
+              <div class="compare-slider" data-compare>
+                <img src="assets/img/jx-1-1.jpg" alt="原始素材" class="compare-base" />
+                <div class="compare-overlay"><img src="assets/img/jx-1-2.jpg" alt="精修后" /></div>
+                <div class="compare-handle"></div>
+                <span class="compare-tag tag-l">RAW</span>
+                <span class="compare-tag tag-r">FINAL</span>
+              </div>
+              <div class="compare-slider" data-compare>
+                <img src="assets/img/jx-2-1.jpg" alt="原始素材" class="compare-base" />
+                <div class="compare-overlay"><img src="assets/img/jx-2-2.jpg" alt="精修后" /></div>
+                <div class="compare-handle"></div>
+                <span class="compare-tag tag-l">RAW</span>
+                <span class="compare-tag tag-r">FINAL</span>
+              </div>
+              <div class="compare-slider" data-compare>
+                <img src="assets/img/jx-3-1.jpg" alt="原始素材" class="compare-base" />
+                <div class="compare-overlay"><img src="assets/img/jx-3-2.jpg" alt="精修后" /></div>
+                <div class="compare-handle"></div>
+                <span class="compare-tag tag-l">RAW</span>
+                <span class="compare-tag tag-r">FINAL</span>
+              </div>
+              <div class="compare-slider" data-compare>
+                <img src="assets/img/jx-4-1.jpg" alt="原始素材" class="compare-base" />
+                <div class="compare-overlay"><img src="assets/img/jx-4-2.jpg" alt="精修后" /></div>
+                <div class="compare-handle"></div>
+                <span class="compare-tag tag-l">RAW</span>
+                <span class="compare-tag tag-r">FINAL</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="pb-block">
+            <h4>量化成果</h4>
+            <ul>
+              <li>可复用模板库落地，后续同类项目交付效率提升 <b>40%</b></li>
+              <li>全量物料视觉合规率 <b>90%+</b>，任职期间零平台违规记录</li>
+              <li>支撑年均 <b>280+</b> SKU 新品高效上线</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 03 -->
+      <article class="project">
+        <header class="project-head">
+          <span class="project-index">Project 03</span>
+          <h3 class="project-title" data-line>安装导向型视频全案</h3>
+          <span class="project-tag">视频全案 · 信息可视化 · 3D 协同</span>
+        </header>
+        <div class="stat-strip">
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="15">0</span>+</span><span class="chip-lab">年均产出（支）</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="25">0</span>%</span><span class="chip-lab">完播率提升</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="40">0</span>%</span><span class="chip-lab">建模返工率降低</span></div>
+        </div>
+        <div class="project-body">
+          <div class="pb-block">
+            <h4>项目背景</h4>
+            <p>产品安装步骤复杂导致售后咨询量高、退换货风险大。需制作可视化安装引导视频适配多平台分发，并沉淀标准化制作流程控制成本。</p>
+          </div>
+
+          <div class="video-block">
+            <h4 class="block-title">细分场景案例 · 4</h4>
+            <div class="video-grid">
+              <!-- 框 1 · 1920×1080 -->
+              <article class="video-card" data-reveal>
+                <div class="video-frame">
+                  <video src="assets/img/SP%201.mp4" muted playsinline preload="metadata"></video>
+                  <button class="video-mask" type="button" aria-label="播放 Video_01">
+                    <span class="vm-code">Video_01</span>
+                    <span class="vm-line"></span>
+                  </button>
+                </div>
+                <div class="video-info">
+                  <span class="video-case">Case 01</span>
+                  <h5>安装标注图形动画</h5>
+                  <p class="video-en">Supplementary Installation Marking Graphic Animation</p>
+                  <p class="video-desc">后期制作标注引线、尺寸提示、孔位说明动态效果，补充产品装配细节演示，丰富信息图形表达形式，完善整套安装可视化演示。</p>
+                </div>
+              </article>
+
+              <!-- 框 2 · 1920×1080 -->
+              <article class="video-card" data-reveal>
+                <div class="video-frame">
+                  <video src="assets/img/SP%202.mp4" muted playsinline preload="metadata"></video>
+                  <button class="video-mask" type="button" aria-label="播放 Video_02">
+                    <span class="vm-code">Video_02</span>
+                    <span class="vm-line"></span>
+                  </button>
+                </div>
+                <div class="video-info">
+                  <span class="video-case">Case 02</span>
+                  <h5>安装提示信息图形动画</h5>
+                  <p class="video-en">Installation Instruction Infographic Animation</p>
+                  <p class="video-desc">设计安装标注信息图形样式，针对汽车包围套件制作动态安装提示动画，通过多种标注 UI 动态演示装配要点、孔位调节、锁紧顺序等安装规范。</p>
+                </div>
+              </article>
+
+              <!-- 框 3 · 1920×1080 -->
+              <article class="video-card" data-reveal>
+                <div class="video-frame">
+                  <video src="assets/img/SP%203.mp4" muted playsinline preload="metadata"></video>
+                  <button class="video-mask" type="button" aria-label="播放 Video_03">
+                    <span class="vm-code">Video_03</span>
+                    <span class="vm-line"></span>
+                  </button>
+                </div>
+                <div class="video-info">
+                  <span class="video-case">Case 03</span>
+                  <h5>BOM 转场及物料清单表格动画</h5>
+                  <p class="video-en">BOM Transition and Bill of Materials Table Animation</p>
+                  <p class="video-desc">后期制作物料清单信息包装动画，衔接产品展示与 BOM 清单模块，利用形状图层搭建表格框架，搭配时序图文淡入动画，实现工程数据可视化动态展示。</p>
+                </div>
+              </article>
+
+              <!-- 框 4 · 1920×1080 -->
+              <article class="video-card" data-reveal>
+                <div class="video-frame">
+                  <video src="assets/img/SP%204.mp4" muted playsinline preload="metadata"></video>
+                  <button class="video-mask" type="button" aria-label="播放 Video_04">
+                    <span class="vm-code">Video_04</span>
+                    <span class="vm-line"></span>
+                  </button>
+                </div>
+                <div class="video-info">
+                  <span class="video-case">Case 04</span>
+                  <h5>AI 生成厨具产品演示视频</h5>
+                  <p class="video-en">AI-Generated Kitchenware Product Demo Video</p>
+                  <p class="video-desc">借助 AI 视频生成工具完成厨房刀具产品宣传片创作，覆盖产品特写、食材切削、水洗测试、厨房陈列多组镜头，AI 写实材质光影，快速完成电商产品动态演示。</p>
+                </div>
+              </article>
+            </div>
+
+            <!-- 框 5 · 1896×516 超宽横版 -->
+            <article class="video-card video-card--wide" data-reveal>
+              <div class="video-frame video-frame--wide">
+                <video src="assets/img/SP%205.mp4" muted playsinline preload="metadata"></video>
+                <button class="video-mask" type="button" aria-label="播放 Video_05">
+                  <span class="vm-code">Video_05</span>
+                  <span class="vm-line"></span>
+                </button>
+              </div>
+              <div class="video-info">
+                <span class="video-case">Case 05</span>
+                <h5>电商级调色与序列原片对比</h5>
+                <p class="video-en">E-commerce Color Grading vs. Raw Sequence · 1896 × 516</p>
+                <p class="video-desc">针对产品序列原片进行统一电商级色彩管理，前后对比呈现调色后的通透质感、准确的产品色彩与品牌调性，提升画面高级感与转化氛围。</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="pb-block">
+            <h4>量化成果</h4>
+            <ul>
+              <li>产品安装视频完播率提升 <b>25%</b>，安装咨询量下降 <b>15%</b></li>
+              <li>标准化流程落地后，同类视频产出效率提升 <b>30%</b></li>
+              <li>建模沟通返工率降低 <b>40%</b></li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+      <!-- 项目 04 -->
+      <article class="project">
+        <header class="project-head">
+          <span class="project-index">Project 04</span>
+          <h3 class="project-title" data-line>多店铺视觉统筹</h3>
+          <span class="project-tag">多平台 · 规模化交付</span>
+        </header>
+        <div class="stat-strip">
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="12">0</span>+</span><span class="chip-lab">家店铺统筹</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="1350">0</span>+</span><span class="chip-lab">SKU 覆盖</span></div>
+          <div class="stat-chip"><span class="chip-num text-red"><span class="cu" data-to="20">0</span>%</span><span class="chip-lab">人力成本节省</span></div>
+        </div>
+        <div class="project-body">
+          <div class="pb-block">
+            <h4>项目背景</h4>
+            <p>统筹 Amazon + eBay 共 12+ 家品牌店铺的日常视觉交付与优化，保障多店铺视觉调性统一、交付及时、合规可控。</p>
+          </div>
+          <div class="pb-block">
+            <h4>核心动作</h4>
+            <ul>
+              <li>逐店对接运营需求，建立分级需求响应机制与节点管控体系</li>
+              <li>制定多店铺统一视觉规范与物料审核机制，统一品牌调性</li>
+              <li>优化任务分配与排期逻辑，动态调配团队产能</li>
+              <li>建立视觉数据台账，沉淀运营数据支撑管理决策</li>
+            </ul>
+          </div>
+          <div class="pb-block">
+            <h4>量化成果</h4>
+            <ul>
+              <li>12+ 家店铺视觉合规率长期保持 <b>90%+</b>，零违规记录</li>
+              <li>多店铺协同交付效率提升 <b>35%</b>，排期冲突率下降 <b>70%</b></li>
+              <li>人力成本节省 <b>20%</b>，不增编支撑业务规模化扩张</li>
+            </ul>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ 07 · 3D 渲染作品 ============ -->
+  <section id="render3d" class="module">
+    <div class="title-screen">
+      <span class="title-num">07</span>
+      <p class="kicker">3D Rendering</p>
+      <h2 class="title tri" data-line>3D 渲染作品</h2>
+    </div>
+    <div class="panel content-panel">
+      <div class="render-intro">
+        <h3 class="render-title serif" data-line>Blender 三维渲染</h3>
+        <p class="render-sub">拓展能力维度 · 多元化作品展示</p>
+        <p class="render-body">具备 Blender 基础渲染实操能力，可独立完成产品基础打光、材质调节、场景搭建与成品渲染输出。补充平面与视频之外的多元视觉呈现形式。</p>
+      </div>
+      <div class="render-list">
+        <figure class="render-item" data-reveal style="aspect-ratio: 2000 / 926;">
+          <img class="render-img" src="assets/img/XR%201.jpg" alt="Blender 三维渲染作品 01" loading="lazy" />
+        </figure>
+        <figure class="render-item" data-reveal style="aspect-ratio: 2000 / 1101;">
+          <img class="render-img" src="assets/img/XR%202.png" alt="Blender 三维渲染作品 02" loading="lazy" />
+        </figure>
+        <figure class="render-item" data-reveal style="aspect-ratio: 2000 / 1134;">
+          <img class="render-img" src="assets/img/XR%203.png" alt="Blender 三维渲染作品 03" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 08 · 技能图谱 ============ -->
+  <section id="skills" class="module">
+    <div class="title-screen">
+      <span class="title-num">08</span>
+      <p class="kicker">Skill Matrix</p>
+      <h2 class="title tri" data-line>技能图谱</h2>
+    </div>
+    <div class="panel content-panel">
+      <div class="skills-grid">
+
+        <article class="skill-card" data-reveal>
+          <header class="sk-head">
+            <h3>2D 视觉设计</h3>
+            <span class="sk-level level-master"><span class="cu" data-to="98">0</span>%</span>
+          </header>
+          <p class="sk-en">2D Visual Design · 精通</p>
+          <div class="sk-bar"><i class="sk-beam"></i><b data-bar="98"></b></div>
+          <div class="sk-tools"><span>Photoshop</span><span>Illustrator</span><span>PS AI</span></div>
+          <ul class="sk-list">
+            <li>产品精修与光影重塑（白底图 / 场景图 / 细节图）</li>
+            <li>A+ 页面视觉设计与卖点信息架构排版</li>
+            <li>AI 辅助设计工具高效出图</li>
+            <li>产品包装设计与说明书视觉优化</li>
+          </ul>
+          <p class="sk-summary">核心高频技能，能高效完成从产品白底精修到品牌全案视觉的全流程输出，善于利用 AI 工具提升效率 30%+。</p>
+        </article>
+
+        <article class="skill-card" data-reveal>
+          <header class="sk-head">
+            <h3>视频全案制作</h3>
+            <span class="sk-level level-master"><span class="cu" data-to="98">0</span>%</span>
+          </header>
+          <p class="sk-en">Video Production · 精通</p>
+          <div class="sk-bar"><i class="sk-beam"></i><b data-bar="98"></b></div>
+          <div class="sk-tools"><span>Premiere Pro</span><span>After Effects</span><span>达芬奇</span></div>
+          <ul class="sk-list">
+            <li>PR 叙事剪辑（产品展示 / 安装引导 / 品牌宣传）</li>
+            <li>AE 电商动画包装（安装步骤 / 功能亮点 / 卖点动效）</li>
+            <li>视频脚本策划与分镜设计</li>
+            <li>批量化视频素材输出，视频制作标准化 SOP 搭建</li>
+          </ul>
+          <p class="sk-summary">能独立完成从脚本策划到成片输出的全流程，擅长梳理叙事逻辑与把控成片节奏，具备大规模批量生产能力。</p>
+        </article>
+
+        <article class="skill-card" data-reveal>
+          <header class="sk-head">
+            <h3>3D 协作能力</h3>
+            <span class="sk-level level-skilled"><span class="cu" data-to="95">0</span>%</span>
+          </header>
+          <p class="sk-en">3D Collaboration · 熟练</p>
+          <div class="sk-bar"><i class="sk-beam"></i><b data-bar="95"></b></div>
+          <div class="sk-tools"><span>Blender</span><span>材质灯光</span></div>
+          <ul class="sk-list">
+            <li>Blender 基础建模与渲染操作</li>
+            <li>专业建模团队高效对接与需求沟通</li>
+            <li>3D 渲染效果全程把控（材质 / 光影 / 角度）</li>
+            <li>产品动画协作与落地效果审核</li>
+          </ul>
+          <p class="sk-summary">核心价值在于高效对接专业建模团队、精准传达需求、全程把控渲染落地效果，建模返工率降低 40%。</p>
+        </article>
+
+        <article class="skill-card" data-reveal>
+          <header class="sk-head">
+            <h3>团队管理统筹</h3>
+            <span class="sk-level level-skilled"><span class="cu" data-to="95">0</span>%</span>
+          </header>
+          <p class="sk-en">Team Management · 熟练</p>
+          <div class="sk-bar"><i class="sk-beam"></i><b data-bar="95"></b></div>
+          <div class="sk-tools"><span>飞书</span><span>Notion</span><span>Excel</span></div>
+          <ul class="sk-list">
+            <li>团队 SOP 体系从 0 到 1 搭建（设计规范 / 审核 / 排期）</li>
+            <li>新人培训体系与带教机制</li>
+            <li>多项目并行管理与优先级排期</li>
+            <li>跨部门协作流程优化 · 全流程数据复盘</li>
+          </ul>
+          <p class="sk-summary">擅长将模糊的团队痛点转化为可落地的标准化流程。3 年主管经验，人均效率提升 30%。</p>
+        </article>
+
+        <article class="skill-card" data-reveal>
+          <header class="sk-head">
+            <h3>产品视觉落地</h3>
+            <span class="sk-level level-master"><span class="cu" data-to="98">0</span>%</span>
+          </header>
+          <p class="sk-en">Product Implementation · 精通</p>
+          <div class="sk-bar"><i class="sk-beam"></i><b data-bar="98"></b></div>
+          <div class="sk-tools"><span>Amazon Seller Central</span><span>全链路工具链</span></div>
+          <ul class="sk-list">
+            <li>Amazon 视觉规范与合规红线深度理解</li>
+            <li>产品 0→1 全链路视觉落地（从拍摄到上架）</li>
+            <li>安装说明书 / 操作指南视觉设计</li>
+            <li>多平台视觉适配（Amazon / eBay）</li>
+          </ul>
+          <p class="sk-summary">深度熟悉 Amazon 平台视觉规范，合规率 100% 零违规，可复用模板体系支撑规模化运营。</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 09 · 商业视觉案例 ============ -->
+  <section id="works" class="module">
+    <div class="title-screen">
+      <span class="title-num">09</span>
+      <p class="kicker">Commercial Works</p>
+      <h2 class="title tri" data-line>商业视觉案例</h2>
+    </div>
+    <div class="panel content-panel works-panel">
+      <div class="works-stage" data-works>
+       <div class="works-sticky">
+        <button class="w-arrow w-prev" aria-label="上一张">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+
+        <div class="works-viewport">
+          <div class="works-ring" data-ring>
+            <div class="w-card" data-w="0"><div class="w-cover"><img src="assets/img/PT%201.1.jpg" alt="商业视觉案例 01" loading="lazy" /></div></div>
+            <div class="w-card" data-w="1"><div class="w-cover"><img src="assets/img/PT%202.1.jpg" alt="商业视觉案例 02" loading="lazy" /></div></div>
+            <div class="w-card" data-w="2"><div class="w-cover"><img src="assets/img/PT%203.1.jpg" alt="商业视觉案例 03" loading="lazy" /></div></div>
+            <div class="w-card" data-w="3"><div class="w-cover"><img src="assets/img/PT%204.1.jpg" alt="商业视觉案例 04" loading="lazy" /></div></div>
+            <div class="w-card" data-w="4"><div class="w-cover"><img src="assets/img/PT%205.1.jpg" alt="商业视觉案例 05" loading="lazy" /></div></div>
+            <div class="w-card" data-w="5"><div class="w-cover"><img src="assets/img/PT%206.1.jpg" alt="商业视觉案例 06" loading="lazy" /></div></div>
+            <div class="w-card" data-w="6"><div class="w-cover"><img src="assets/img/PT%207.1.jpg" alt="商业视觉案例 07" loading="lazy" /></div></div>
+          </div>
+        </div>
+
+        <button class="w-arrow w-next" aria-label="下一张">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+
+        <div class="w-dots" data-dots></div>
+       </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 10 · 联系 ============ -->
+  <section id="contact" class="module">
+    <div class="title-screen title-screen--dark">
+      <span class="title-num">10</span>
+      <p class="kicker">Contact</p>
+      <h2 class="title title--shimmer">Thank You<br/>for Reviewing</h2>
+      <p class="title-sub">感谢您的时间</p>
+    </div>
+    <div class="panel content-panel contact-panel">
+      <div class="contact-rows">
+        <a class="c-row c-row-name" href="tel:18036388334">
+          <span class="serif">汤翊聆</span><i>·</i><span class="cu-phone">180&nbsp;3638&nbsp;8334</span>
+        </a>
+        <a class="c-row" href="mailto:tmsx123456@163.com">
+          <span class="c-k">Email：</span>tmsx123456@163.com
+        </a>
+        <a class="c-row c-row-feishu" href="https://my.feishu.cn/wiki/GykTw9DSAicyUwkWdAecgP1knKb" target="_blank" rel="noopener">
+          <span class="cf-text">视觉全案档案（点击可跳转飞书文档） →</span>
+        </a>
+        <div class="c-row c-row-stats">
+          <span><b class="text-red"><span class="cu" data-to="1350">0</span>+</b> SKU 视觉管理</span><i>·</i>
+          <span><b class="text-red"><span class="cu" data-to="12">0</span>+</b> 店铺统筹</span><i>·</i>
+          <span><b class="text-red"><span class="cu" data-to="100">0</span>%</b> 视觉合规率</span>
+        </div>
+      </div>
+      <div class="vision">
+        <p class="vision-k">职业愿景 · Career Vision</p>
+        <p>希望在跨境电商视觉领域深耕，依托体系化能力与规模化项目经验，支持公司规模化运营，持续提升自身专业能力与协同能力，与公司实现共赢。</p>
+      </div>
+      <p class="foot">© 2026 Tang Yiling · 汤翊聆 · Cross-border Visual Design Director</p>
+    </div>
+  </section>
+
+  <script src="js/smooth-scroll.js?v=20261024" defer></script>
+  <script src="js/components.js?v=20261024" defer></script>
+  <script src="js/sections.js?v=20261024" defer></script>
+  <script src="js/main.js?v=20261024" defer></script>
+</body>
+</html>

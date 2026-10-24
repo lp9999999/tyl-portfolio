@@ -1,0 +1,82 @@
+/* ========== ≤1280 ========== */
+@media (max-width: 1280px) {
+  .pos-grid { grid-template-columns: repeat(2, 1fr); }
+  .sidenav { display: none; }
+  .nav-fab { display: flex; }
+  .w-prev { left: 10px; }
+  .w-next { right: 10px; }
+}
+
+/* ========== ≤900（平板 / 窄窗口） ========== */
+@media (max-width: 900px) {
+  :root {
+    --content-w: 92%;
+    --f-title: clamp(1.9rem, 8vw, 3rem);
+    --f-num: clamp(5rem, 30vw, 9rem);
+  }
+
+  /* 封面：上下堆叠，左文右图 */
+  .cover { grid-template-rows: 1fr auto; padding: 76px 20px 24px; gap: 8px; }
+  .cover-main { grid-template-columns: 1fr; gap: 18px; }
+  .cover-title { font-size: clamp(3rem, 14vw, 5rem); }
+  .cover-art { min-height: 280px; height: 40vh; order: 3; }
+  .cc-card { width: min(24vh, 180px) !important; }
+  .cc-card--l { transform: translate(calc(-50% - 108px), -48%) rotate(-9deg) scale(0.8) !important; }
+  .cc-card--c { transform: translate(-50%, -50%) scale(0.92) !important; }
+  .cc-card--r { transform: translate(calc(-50% + 108px), -48%) rotate(9deg) scale(0.8) !important; }
+  .cover-art:hover .cc-card--l { transform: translate(calc(-50% - 124px), -48%) rotate(-9deg) scale(0.8) !important; }
+  .cover-art:hover .cc-card--r { transform: translate(calc(-50% + 124px), -48%) rotate(9deg) scale(0.8) !important; }
+  .cover-bottom .cb-txt { font-size: 0.78rem; }
+
+  .about-cols { grid-template-columns: 1fr; gap: 20px; }
+  .about-meta span { flex-basis: 100%; }
+
+  .exp { grid-template-columns: 1fr; gap: 32px; }
+  .exp-aside { position: static; }
+
+  /* 项目统一列宽（跟随 .project） */
+  .project { width: min(92vw, 720px); }
+  .stat-strip { grid-template-columns: repeat(3, 1fr); }
+  .compare-grid { grid-template-columns: 1fr; }
+  .video-grid { grid-template-columns: 1fr; }
+
+  .skills-grid { grid-template-columns: 1fr; }
+  .skill-card,
+  .skill-card:nth-child(1), .skill-card:nth-child(2),
+  .skill-card:nth-child(3), .skill-card:nth-child(4), .skill-card:nth-child(5) {
+    grid-column: 1 / -1;
+  }
+
+  .sc-row--narrow .s-card,
+  .sc-row--wide .s-card { flex: 1 1 44%; }
+
+  /* 案例扇形：尺寸由 JS 自适应，仅调容器与控件 */
+  .works-viewport { width: 94vw; height: 74vh; }
+  .w-arrow { width: 44px; height: 44px; }
+  .w-dots { bottom: 3vh; }
+}
+
+/* ========== ≤560（手机） ========== */
+@media (max-width: 560px) {
+  .pos-grid { grid-template-columns: 1fr; }
+  .sc-row { flex-direction: column; }
+  .sc-row .s-card { flex: 1 1 auto; width: 100%; }
+  .stat-strip { grid-template-columns: 1fr; }
+  .stat-chip { height: 68px; }
+  .exp-row { grid-template-columns: 44px 1fr; gap: 14px; }
+  .c-row-stats { flex-direction: column; gap: 6px; }
+  .c-row-stats i { display: none; }
+
+  /* 封面三卡进一步收拢，避免窄屏重叠溢出 */
+  .cc-card { width: min(20vh, 150px) !important; }
+  .cc-card--l { transform: translate(calc(-50% - 80px), -48%) rotate(-9deg) scale(0.74) !important; }
+  .cc-card--c { transform: translate(-50%, -50%) scale(0.9) !important; }
+  .cc-card--r { transform: translate(calc(-50% + 80px), -48%) rotate(9deg) scale(0.74) !important; }
+  .cover-art:hover .cc-card--l { transform: translate(calc(-50% - 92px), -48%) rotate(-9deg) scale(0.74) !important; }
+  .cover-art:hover .cc-card--r { transform: translate(calc(-50% + 92px), -48%) rotate(9deg) scale(0.74) !important; }
+
+  .works-sticky { padding-bottom: 70px; }
+  .w-arrow { width: 38px; height: 38px; }
+  .w-prev { left: 4px; }
+  .w-next { right: 4px; }
+}

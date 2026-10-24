@@ -1,0 +1,46 @@
+/* ========== 浅色品牌配色（纯白底 + 深海蓝正文） ========== */
+:root {
+  --bg:      #ffffff;   /* 页面背景：纯白 */
+  --bg-up:   #f6f7f9;   /* 轻微抬升表面 */
+  --panel:   #ffffff;   /* 覆盖面板 */
+  --ink:     #252a34;   /* 主标题 / 正文（深海蓝，非纯黑） */
+  --muted:   rgba(37, 42, 52, 0.62);
+  --faint:   rgba(37, 42, 52, 0.4);
+  --line:    #eaeaea;   /* 分割线 / 卡片边框 / 弱层次 */
+  --line-soft: rgba(37, 42, 52, 0.07);
+
+  /* 主强调玫红 + 辅助青绿 */
+  --pink: #ff2e63;
+  --pink-soft: rgba(255, 46, 99, 0.1);
+  --cyan: #08d9d6;
+  --cyan-soft: rgba(8, 217, 214, 0.1);
+  --cyan-line: rgba(8, 217, 214, 0.55);
+
+  --grad-accent: linear-gradient(90deg, #ff2e63, #08d9d6);
+
+  --shadow-panel: 0 -24px 70px rgba(37, 42, 52, 0.14);
+  --shadow-card: 0 6px 22px rgba(37, 42, 52, 0.08);
+  --shadow-lift: 0 22px 50px rgba(37, 42, 52, 0.16), 0 0 0 1px var(--cyan-line);
+  --glow-pink: 0 0 30px rgba(255, 46, 99, 0.28);
+
+  /* 字体 */
+  --serif: "Fraunces", "Noto Serif SC", "Songti SC", serif;
+  --sans:  "Noto Sans SC", -apple-system, "PingFang SC", sans-serif;
+  --mono:  "Geist Mono", ui-monospace, monospace;
+
+  /* 字号 */
+  --f-name:   clamp(4rem, 11vw, 9rem);
+  --f-title:  clamp(2.6rem, 6vw, 5rem);
+  --f-num:    clamp(7rem, 24vw, 20rem);
+  --f-h3:     clamp(1.3rem, 2.2vw, 1.8rem);
+  --f-body:   1rem;
+
+  /* 动效 */
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.4, 0.44, 1);
+
+  --radius-panel: 32px;
+  --radius-card: 20px;
+  --radius-chip: 14px;
+  --content-w: min(86%, 1280px);
+}
