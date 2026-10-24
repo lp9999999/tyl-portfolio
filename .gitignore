@@ -1,7 +1,5 @@
-# 视频素材体积较大（约 164MB），不入库，部署时单独上传
-assets/img/*.mp4
-
 # 系统与临时文件
 .DS_Store
 Thumbs.db
 *.log
+
